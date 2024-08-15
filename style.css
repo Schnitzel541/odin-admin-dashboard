@@ -1,4 +1,130 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: rgb(72, 145, 255);
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.sidebar > h1 {
+    margin-bottom: 50px;
+}
+
+.sidebar > p {
+    font-size: 1.2rem;
+}
+
+.header-search-bar {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 0.5fr 5fr 1fr 1fr 1fr;
+}
+.header-search-bar > .search-icon {
+    width: 40px;
+    justify-self: center;
+    align-self: center;
+}
+
+.header-search-bar > .bell-icon {
+    width: 40px;
+    justify-self: center;
+    align-self: center;
+}
+
+.header-search-bar > .icon-user {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.header-search-bar > .user-name {
+    font-style: bold;
+    font-size: large;
+    align-self: center;
+    justify-self: center;
+}
+
+.header-search-bar > .user-name-bottom {
+    font-style: bold;
+    font-size: large;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-search-bar > input {
+    border: none;
+    background-color: rgb(218, 218, 218);
+    border-radius: 500px;
+    width: 90%;
+    height: 50%;
+    align-self: center;
+    margin-left: 30px;
+}
+
+button {
+    width: 70%;
+    height: 40%;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(72, 145, 255);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(103, 164, 255);
+}
+button:active {
+    background-color: rgb(144, 188, 253);
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(235, 235, 235);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    height: 90%;
+    box-shadow: 5px 1px 10px rgb(197, 197, 197);
+    border-radius: 10px;
+    border-left: solid 10px rgb(240, 180, 41);
+    background-color: rgb(255, 255, 255);
+    justify-self: center;
+    align-self: center;
+}
+.card > h2, .card > p {
+    margin-left: 10px;
+    max-width: 80%;
 }
